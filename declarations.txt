@@ -11,7 +11,7 @@
  
  str.isEmpty();
 
----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------  
 👉Stack
 
  Stack<Integer> st = new Stack<>();
@@ -30,7 +30,7 @@
     System.out.println("Element is found at position: " + pos);
 
  st.empty()
----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------  
 👉Deque
 
  Deque<Character> stack = new ArrayDeque<Character>();
@@ -42,7 +42,7 @@
 stack.isEmpty()        
 
 
----------------------------------------------------------------------------------        
+--------------------------------------------------------------------------------------------         
 👉ArrayList
 
  ArrayList<Integer> arr1 = new ArrayList<Integer>(n);
@@ -60,4 +60,32 @@ stack.isEmpty()
  al.remove(1);
 
  al.isEmpty()
+
+--------------------------------------------------------------------------------------------        
+👉HashSet
+duplicate values are not allowed.
+Objects that you insert in HashSet are not guaranteed to be inserted in the same order
+Objects are inserted based on their hash code.
+
+HashSet<String> h = new HashSet<String>();
+
+h.add("India");
+
+h.add("India");   // it is not store in HashSet
+
+h.contains("India"); // return true or false
+
+h.remove("India");
+
+Iterator<String> i = h.iterator();
+// Holds true till there is single element remaining
+while (i.hasNext())
+{
+     // Iterating over elements
+     // using next() method
+    System.out.println(i.next());
+}
+
+   
+
 
