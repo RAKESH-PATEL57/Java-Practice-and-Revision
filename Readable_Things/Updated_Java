@@ -1,0 +1,16 @@
+Switch case You don't need to write break statement and you can switch string also 
+
+example :-
+
+   String day = "Sunday";
+
+        switch(day)
+        {
+            case "Saturday", "Sunday" -> System.out.println("wake up in 7am");
+            case "Monday" -> System.out.println("wake up in 6am");
+            default -> System.out.println("wake up in 6am");
+        }
+
+and many more things you can see in inside the UpdatedThingsInJava folder       
+
+--------------------------------------------------------------------------------------------------------------------
