@@ -1,3 +1,10 @@
 Instance Variables:- those variable that are belongs to a class not a method.
 
 Exceptions:-  Run time Error are known as exceptions.
+
+Time Complexity :- Measure of how the running time of an algorithm increases with the size of the input data
+
+----------------------------------------------------------------
+while loop :- when we don't consider number of iteration we just consider our condition.
+
+----------------------------------
