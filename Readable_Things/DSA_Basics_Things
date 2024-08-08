@@ -81,6 +81,8 @@ Iterator<String> i = h.iterator();
 // Holds true till there is single element remaining
 while (i.hasNext())
 {
+     // Iterating over elements
+    //  using next() method
     System.out.println(i.next());
 }
 

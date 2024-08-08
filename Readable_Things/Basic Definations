@@ -4,7 +4,40 @@ Exceptions:-  Run time Error are known as exceptions.
 
 Time Complexity :- Measure of how the running time of an algorithm increases with the size of the input data
 
-----------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
 while loop :- when we don't consider number of iteration we just consider our condition.
 
-----------------------------------
+---------------------------------------------------------------------------------------------------------------
+StringBuffer  :-   thread safe 
+StringBuilder :-   thread safe not
+
+---------------------------------------------------------------
+
+Class Calc{
+    static int stA=100; //independent of object // we can use this by class name as well as object
+    int inB=100;  //dependent of object //we can only use this by object
+}
+public static void main(String []args){
+Calc obj1=new Calc(); 
+Calc obj1=new Calc();
+//for static variable
+System.out.println(Calc.stA); //use with class name
+System.out.println(obj1.stA);  //use by object name
+
+//for instance variable
+//System.out.println(Calc.inB); //got an error --Cannot make a static reference to the non-static
+System.out.println(obj1.inB); //used by object name reference 
+
+obj1.inB=1000;
+obj1.stA=2000;
+
+//static 
+System.out.println(obj1.stA);//output: 2000
+System.out.println(obj2.stA);//output: 2000 value changed for both obj1 and obj2 
+
+
+//instance 
+System.out.println(obj1.inB); // output: 1000
+System.out.println(obj2.inB); // output: 100 no change in obj2
+}
+}
