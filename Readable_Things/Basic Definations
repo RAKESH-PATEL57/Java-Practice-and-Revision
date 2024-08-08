@@ -41,3 +41,9 @@ System.out.println(obj1.inB); // output: 1000
 System.out.println(obj2.inB); // output: 100 no change in obj2
 }
 }
+
+// Static block only calls once and it is always execute first and does not matter the order
+//static
+// {
+//   System.out.println("enter your content");
+// }

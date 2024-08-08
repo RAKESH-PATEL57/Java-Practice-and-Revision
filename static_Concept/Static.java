@@ -1,3 +1,4 @@
+package static_Concept;
 class Mobile
 {
      String brand;
