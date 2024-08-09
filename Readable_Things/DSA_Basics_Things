@@ -61,6 +61,8 @@ stack.isEmpty()
 
  al.isEmpty()
 
+ al.clean(); to clean of remove all the elements from the ArrayList
+
 --------------------------------------------------------------------------------------------        
 👉HashSet
 duplicate values are not allowed.

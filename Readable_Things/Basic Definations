@@ -47,3 +47,10 @@ System.out.println(obj2.inB); // output: 100 no change in obj2
 // {
 //   System.out.println("enter your content");
 // }
+---
+always preference to "local variable" then "instance variable"
+---
+using "this" keyword we can differentiate the "local variable" and "instance variables".
+---
+this keyword is refering to current object jis class kaa object create kiyaa hogaa usko refering kartaa hai
+---
