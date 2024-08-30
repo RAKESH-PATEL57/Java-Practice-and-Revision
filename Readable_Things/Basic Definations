@@ -42,11 +42,11 @@ System.out.println(obj2.inB); // output: 100 no change in obj2
 }
 }
 
-// Static block only calls once and it is always execute first and does not matter the order
-//static
-// {
-//   System.out.println("enter your content");
-// }
+Static block only calls once and it is always execute first and does not matter the order
+static
+{
+  System.out.println("enter your content");
+}
 ---
 always preference to "local variable" then "instance variable"
 ---
