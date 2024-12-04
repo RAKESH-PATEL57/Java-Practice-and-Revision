@@ -1,5 +1,7 @@
 package GFG;
 
+import java.util.ArrayList;
+
 public class RotateArray 
 {
     static void rotateArr(int arr[], int d) {
