@@ -1,4 +1,4 @@
-package GFG;
+
 
 public class StockByeAndSell 
 {

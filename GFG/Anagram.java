@@ -1,4 +1,3 @@
-package GFG;
 
 import java.util.Arrays;
 

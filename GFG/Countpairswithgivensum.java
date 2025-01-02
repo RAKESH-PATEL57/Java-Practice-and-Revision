@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class Countpairswithgivensum {
     int countPairs(int arr[], int target) {
         

@@ -1,4 +1,4 @@
-package GFG;
+
 
 public class AddBinaryStrings {
     public String addBinary(String s1, String s2) 

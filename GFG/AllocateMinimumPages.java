@@ -1,4 +1,3 @@
-package GFG;
 
 public enum AllocateMinimumPages {
     public static int findPages(int[] arr, int k) 
