@@ -1,3 +1,5 @@
+package GFG;
+
 public int countSubarrays(int arr[], int k) 
     {
         int res = 0;

@@ -1,3 +1,5 @@
+package GFG;
+
  public ArrayList<ArrayList<String>> anagrams(String[] arr) {
         Map<String, List<String>> mp = new HashMap();
         
