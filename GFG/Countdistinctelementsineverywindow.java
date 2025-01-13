@@ -5,6 +5,30 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Countdistinctelementsineverywindow {
+    
+    //method - 1
+    ArrayList<Integer> countDistinct(int arr[], int k) {
+        int ln = arr.length;
+        ArrayList<Integer> ans = new ArrayList<>();
+        Map<Integer, Integer> freqMap = new HashMap<>();
+        int j=0;
+
+        for(int i = 0; i < ln; i++)
+        {
+            freqMap.put(arr[i], freqMap.getOrDefault(arr[i], 0) + 1);
+            if(i>=k-1)
+            {
+                ans.add(freqMap.size());
+                freqMap.put(arr[j],freqMap.get(arr[j])-1);
+                if(freqMap.get(arr[j])==0)
+                {
+                    freqMap.remove(arr[j]);
+                }
+                j++; 
+            }
+        }
+    }
+    // method - 2
     ArrayList<Integer> countDistinct(int arr[], int k) {
         ArrayList<Integer> res = new ArrayList<>();
         Map<Integer, Integer> freqMap = new HashMap<>();
