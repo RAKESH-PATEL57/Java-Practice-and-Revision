@@ -3,9 +3,14 @@ package GFG;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class CheckEqualArrays {
+
+
+    //see third approach (optimized 👨‍💻)
 
     //first approach
      public static boolean checkEqual(int[] a, int[] b) {
@@ -23,5 +28,23 @@ public class CheckEqualArrays {
         Arrays.sort(a);
         Arrays.sort(b);
         return Arrays.equals(a,b);
+    }
+
+    //third approach(Optimized)
+        public static boolean checkEqual(int[] a, int[] b) {
+        Map<Integer, Integer> freqMapA = new HashMap<>();
+        Map<Integer, Integer> freqMapB = new HashMap<>();
+        
+        for(int num : a)
+        {
+           freqMapA.put(num, freqMapA.getOrDefault(num, 0) + 1);
+        }
+        
+        for(int num: b)
+        {
+            freqMapB.put(num, freqMapB.getOrDefault(num, 0) + 1);
+        }
+        
+        return freqMapA.equals(freqMapB);
     }
 }
