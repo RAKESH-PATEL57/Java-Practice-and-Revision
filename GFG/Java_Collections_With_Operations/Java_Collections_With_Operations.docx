@@ -1,0 +1,97 @@
+Java Collection Declarations with Basic Operations
+
+1. List Implementations
+
+List<String> list = new ArrayList<>();
+list.add("apple");
+list.get(0);
+list.remove("apple");
+list.size();
+
+
+2. Set Implementations
+Set<String> set = new HashSet<>();
+set.add("apple");
+set.contains("apple");
+set.remove("apple");
+set.size();
+
+
+3. Queue and Deque Implementations
+
+Queue<String> queue = new LinkedList<>();
+queue.offer("apple");
+queue.poll();
+queue.peek();
+Deque<String> deque = new ArrayDeque<>();
+deque.addFirst("first");
+deque.addLast("last");
+deque.removeFirst();
+deque.removeLast();
+
+
+4. Stack (LIFO)
+
+Stack<String> stack = new Stack<>();
+stack.push("apple");
+stack.pop();
+stack.peek();
+stack.isEmpty();
+
+
+5. Map Implementations
+
+Map<String, Integer> map = new HashMap<>();
+map.put("apple", 1);
+map.get("apple");
+map.remove("apple");
+map.containsKey("apple");
+
+
+6. Priority Queue (Min-Heap / Max-Heap)
+
+PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+minHeap.add(10);
+minHeap.peek();
+minHeap.poll();
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+maxHeap.add(20);
+maxHeap.peek();
+maxHeap.poll();
+
+
+7. Synchronized Collections (Thread-safe)
+
+List<String> syncList = Collections.synchronizedList(new ArrayList<>());
+syncList.add("apple");
+Set<String> syncSet = Collections.synchronizedSet(new HashSet<>());
+syncSet.add("banana");
+Map<String, String> syncMap = Collections.synchronizedMap(new HashMap<>());
+syncMap.put("key", "value");
+
+
+8. Arrays
+
+int[] arr = new int[10];
+arr[0] = 5;
+int x = arr[0];
+int length = arr.length;
+
+
+9. Vector (legacy thread-safe list)
+
+Vector<String> vector = new Vector<>();
+vector.add("apple");
+vector.get(0);
+vector.remove("apple");
+vector.size();
+
+
+10. EnumSet & EnumMap (used with Enums)
+
+EnumSet<Day> days = EnumSet.of(Day.MONDAY, Day.TUESDAY);
+days.add(Day.WEDNESDAY);
+days.contains(Day.MONDAY);
+EnumMap<Day, String> enumMap = new EnumMap<>(Day.class);
+enumMap.put(Day.MONDAY, "Start");
+enumMap.get(Day.MONDAY);
