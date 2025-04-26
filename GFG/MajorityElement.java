@@ -1,4 +1,37 @@
+package GFG;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class MajorityElement {
+
+
+    //approach - 1
+    static int majorityElement(int arr[]) {
+        // code here
+        Map<Integer,Integer> map = new HashMap<>();
+        int ln = arr.length;
+        int check = ln/2;
+        
+        
+        for(int num: arr)
+        {
+            map.put(num, map.getOrDefault(num,0)+1);
+        }
+        
+        for(Map.Entry<Integer,Integer> entry : map.entrySet())
+        {
+            if(entry.getValue() > check)
+            {
+                return entry.getKey();
+            }
+        }
+        
+        
+        return -1;
+    }
+    
+    // approach - 2
     static int majorityElement(int arr[]) 
     {
       int candidate = arr[0], count = 1;
