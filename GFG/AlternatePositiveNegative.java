@@ -7,7 +7,6 @@ public class AlternatePositiveNegative {
         // code here
         ArrayList<Integer> neg = new ArrayList<>();
         ArrayList<Integer> pos = new ArrayList<>();
-        ArrayList<Integer> res = new ArrayList<>();
         
         int ln = arr.size();
         
