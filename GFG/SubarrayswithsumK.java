@@ -49,6 +49,5 @@ public int cntSubarrays(int[] arr, int k)
             prefixSumCount.put(currentSum, 
                               prefixSumCount.getOrDefault(currentSum, 0) + 1);
         }
-        
         return count;
 }
