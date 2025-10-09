@@ -1,4 +1,10 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class FindCommonElementsBetweenTwoArrays {
+
+
+    //method-1 (Brute Force)
     public int[] findIntersectionValues(int[] nums1, int[] nums2) 
     {
         // Map<Integer,Integer> n1 = new HashMap<>();
@@ -56,4 +62,29 @@ public class FindCommonElementsBetweenTwoArrays {
 
         return res;
     }
+
+
+    //method -2 (Using HashSet)
+            // Use HashSet for O(1) average lookup
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+
+        // Add all elements to sets
+        for (int num : nums1) set1.add(num);
+        for (int num : nums2) set2.add(num);
+
+        int ans1 = 0;
+        int ans2 = 0;
+
+        // Count how many nums1[i] exist in nums2
+        for (int num : nums1) {
+            if (set2.contains(num)) ans1++;
+        }
+
+        // Count how many nums2[i] exist in nums1
+        for (int num : nums2) {
+            if (set1.contains(num)) ans2++;
+        }
+
+        return new int[]{ans1, ans2};
 }
